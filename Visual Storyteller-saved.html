@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Visual Storyteller | Umar Supardi Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        story: {
+                            deep: '#0f172a',
+                            forest: '#064e3b',
+                            gold: '#fbbf24',
+                            emerald: '#10b981',
+                            purple: '#7c3aed',
+                            warm: '#fff7ed'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .story-gradient {
+            background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%);
+        }
+        .btn-magic {
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-magic:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #fbbf24;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card px-6 py-4 flex justify-between items-center border-b border-white/10">
+        <h1 class="font-serif text-2xl md:text-3xl font-bold tracking-tight text-story-gold">
+            The Visual Storyteller
+        </h1>
+        <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+            <span class="hover:text-story-gold transition-colors cursor-pointer">Portfolio</span>
+            <span class="hover:text-story-gold transition-colors cursor-pointer">Storyboard</span>
+            <span class="hover:text-story-gold transition-colors cursor-pointer">Contact</span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="pt-24 pb-12 px-4 md:px-8 max-w-5xl mx-auto space-y-16">
+        
+        <!-- Intro Hero Section -->
+        <section class="animate-fade-in text-center space-y-6 pt-10">
+            <div class="inline-block px-4 py-1.5 rounded-full border border-story-gold/30 bg-story-gold/10 text-story-gold text-xs font-bold uppercase tracking-widest mb-4">
+                Creative Portfolio
+            </div>
+            <h2 class="text-4xl md:text-7xl font-serif font-bold leading-tight">
+                Program Makan Bergizi <span class="italic text-story-gold">Gratis</span>
+            </h2>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
+                Sebuah eksplorasi visual storytelling oleh <span class="text-white font-semibold italic">Umar Supardi</span> yang mengangkat isu krusial melalui narasi yang menyentuh hati.
+            </p>
+            <div class="pt-8 flex flex-wrap justify-center gap-4">
+                <a href="mailto:umarsupardi96@gmail.com" class="px-8 py-3 rounded-full bg-white text-story-deep font-bold hover:bg-story-gold transition-all">Hubungi Saya</a>
+                <a href="https://wa.me/6285138312900" target="_blank" class="px-8 py-3 rounded-full glass-card border-white/20 font-bold hover:bg-white/10 transition-all">WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- About & Overview Grid -->
+        <div class="grid md:grid-cols-2 gap-8 items-stretch">
+            <div class="glass-card p-8 rounded-3xl space-y-4">
+                <h3 class="text-2xl font-serif font-bold text-story-gold">Tentang Saya</h3>
+                <p class="text-slate-300 leading-relaxed">
+                    Saya adalah seorang <span class="text-white font-medium">creative learner</span> yang sedang berkembang di bidang digital content, storytelling, dan visual design. Fokus utama saya adalah pada storyboard dan konten edukasi sosial yang memiliki dampak nyata.
+                </p>
+                <div class="pt-4 flex gap-4">
+                    <div class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300">Self-learning</div>
+                    <div class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300">Practical Application</div>
+                </div>
+            </div>
+            <div class="glass-card p-8 rounded-3xl space-y-4 border-l-4 border-l-story-emerald">
+                <h3 class="text-2xl font-serif font-bold text-story-emerald">Visi Proyek</h3>
+                <p class="text-slate-300 leading-relaxed">
+                    Meningkatkan kesadaran publik mengenai pentingnya makanan bergizi gratis bagi anak-anak sekolah melalui pendekatan emosional dan visual yang kuat. Mengubah narasi kebijakan menjadi pengalaman manusiawi.
+                </p>
+                <div class="grid grid-cols-2 gap-2 text-sm italic text-slate-400">
+                    <div>• Awareness</div>
+                    <div>• Emotional Connect</div>
+                    <div>• Visual Clarity</div>
+                    <div>• Social Impact</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept & Styles -->
+        <section class="space-y-8">
+            <h3 class="text-3xl font-serif font-bold text-center">Eksplorasi Multi-Style</h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="p-4 glass-card rounded-2xl text-center group hover:border-story-gold transition-all">
+                    <div class="text-2xl mb-2">🎞️</div>
+                    <div class="text-sm font-bold">Motion Graphics</div>
+                    <div class="text-[10px] text-slate-400 mt-1 uppercase">Fast & Info</div>
+                </div>
+                <div class="p-4 glass-card rounded-2xl text-center group hover:border-story-gold transition-all">
+                    <div class="text-2xl mb-2">🧊</div>
+                    <div class="text-sm font-bold">Low Poly 3D</div>
+                    <div class="text-[10px] text-slate-400 mt-1 uppercase">Light & Modern</div>
+                </div>
+                <div class="p-4 glass-card rounded-2xl text-center group hover:border-story-gold transition-all border-b-2 border-story-gold">
+                    <div class="text-2xl mb-2">✨</div>
+                    <div class="text-sm font-bold">Pixar-style</div>
+                    <div class="text-[10px] text-slate-400 mt-1 uppercase">Emotional</div>
+                </div>
+                <div class="p-4 glass-card rounded-2xl text-center group hover:border-story-gold transition-all border-b-2 border-story-gold">
+                    <div class="text-2xl mb-2">🌸</div>
+                    <div class="text-sm font-bold">Anime Cinematic</div>
+                    <div class="text-[10px] text-slate-400 mt-1 uppercase">Relatable</div>
+                </div>
+                <div class="p-4 glass-card rounded-2xl text-center group hover:border-story-gold transition-all">
+                    <div class="text-2xl mb-2">🎥</div>
+                    <div class="text-sm font-bold">Realistic</div>
+                    <div class="text-[10px] text-slate-400 mt-1 uppercase">Credible</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Feed Section -->
+        <section class="space-y-12">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-[1px] flex-grow bg-gradient-to-r from-transparent to-slate-700"></div>
+                <h3 class="text-2xl font-serif font-bold">The Storyboard Feed</h3>
+                <div class="h-[1px] flex-grow bg-gradient-to-l from-transparent to-slate-700"></div>
+            </div>
+
+            <!-- Scene 1 -->
+            <article class="glass-card rounded-[2.5rem] overflow-hidden p-6 md:p-10 space-y-8 animate-fade-in">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <span class="text-story-gold font-bold text-sm tracking-widest uppercase">Scene 01: Lonely Walk</span>
+                        <span class="text-xs text-slate-500 italic">Lighting: Cool Morning</span>
+                    </div>
+                    <p class="text-xl md:text-2xl text-slate-200 leading-relaxed font-light italic">
+                        "Aku… lapar."
+                    </p>
+                    <p class="text-sm text-slate-400">
+                        Seorang anak berjalan lemah menuju sekolah. Langkah kakinya gontai, mencerminkan perut yang kosong sejak kemarin malam.
+                    </p>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-story-gold/20 to-story-purple/20 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="relative bg-black rounded-xl overflow-hidden shadow-2xl">
+                        <img src='https://opal.google/board/blobs/ea7a7ba1-7018-4d8e-b51c-bbfeb887f12b' alt='Scene 1: Lonely Walk' class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" />
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <button class="btn-magic px-6 py-3 rounded-xl text-story-deep font-bold text-sm flex items-center gap-2">
+                        <span>Lanjut ke Sekolah</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                    <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-xs text-slate-400 flex items-center">
+                        Shot: Slow push-in | Sound: Footsteps, Wind
+                    </div>
+                </div>
+            </article>
+
+            <!-- Scene 2 -->
+            <article class="glass-card rounded-[2.5rem] overflow-hidden p-6 md:p-10 space-y-8 animate-fade-in">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <span class="text-story-gold font-bold text-sm tracking-widest uppercase">Scene 02: In Class</span>
+                        <span class="text-xs text-slate-500 italic">Lighting: Soft</span>
+                    </div>
+                    <p class="text-xl md:text-2xl text-slate-200 leading-relaxed font-light italic">
+                        "...nggak fokus..."
+                    </p>
+                    <p class="text-sm text-slate-400">
+                        Di tengah pelajaran, pandangannya kabur. Suara guru terdengar jauh. Hanya ada satu yang ia pikirkan.
+                    </p>
+                </div>
+                <div class="relative bg-black rounded-xl overflow-hidden shadow-2xl border border-white/5">
+                    <img src='https://opal.google/board/blobs/07db2c56-453f-4a06-9008-b0a598840847' alt='Scene 2: In Class' class="w-full h-auto object-cover" />
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <button class="btn-magic px-6 py-3 rounded-xl text-story-deep font-bold text-sm">Bertahan & Menyimak</button>
+                    <button class="bg-white/10 hover:bg-white/20 px-6 py-3 rounded-xl text-white font-bold text-sm transition-all">Memejamkan Mata</button>
+                </div>
+            </article>
+
+            <!-- Scene 3 -->
+            <article class="glass-card rounded-[2.5rem] overflow-hidden p-6 md:p-10 space-y-8 animate-fade-in">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <span class="text-story-gold font-bold text-sm tracking-widest uppercase">Scene 03: Hope Arrives</span>
+                        <span class="text-xs text-slate-500 italic">Lighting: Warm</span>
+                    </div>
+                    <p class="text-xl md:text-2xl text-slate-200 leading-relaxed font-light italic">
+                        "Itu apa ya?"
+                    </p>
+                    <p class="text-sm text-slate-400">
+                        Pintu terbuka, aroma harum masakan tiba-tiba menyeruak memenuhi ruang kelas yang lesu. Harapan baru datang dalam bentuk kotak-kotak makanan.
+                    </p>
+                </div>
+                <div class="relative bg-black rounded-xl overflow-hidden shadow-2xl">
+                    <img src='https://opal.google/board/blobs/64938d75-e1f8-4ed4-a9ac-c1ac7e9832cc' alt='Scene 3: Hope Arrives' class="w-full h-auto object-cover" />
+                </div>
+            </article>
+
+            <!-- Scene 4 -->
+            <article class="glass-card rounded-[2.5rem] overflow-hidden p-6 md:p-10 space-y-8 animate-fade-in">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <span class="text-story-gold font-bold text-sm tracking-widest uppercase">Scene 04: Interaction</span>
+                        <span class="text-xs text-slate-500 italic">Lighting: Warm</span>
+                    </div>
+                    <p class="text-xl md:text-2xl text-slate-200 leading-relaxed font-light italic">
+                        "...buat aku?"
+                    </p>
+                    <p class="text-sm text-slate-400">
+                        Tangan gemetar menerima kotak makanan. Ia menatap gurunya dengan tatapan penuh tanya dan rasa tidak percaya.
+                    </p>
+                </div>
+                <div class="relative bg-black rounded-xl overflow-hidden shadow-2xl">
+                    <img src='https://opal.google/board/blobs/1a9e6193-b155-4a0c-9ab1-c4e93fce73ab' alt='Scene 4: Interaction' class="w-full h-auto object-cover" />
+                </div>
+            </article>
+
+            <!-- Scene 5 -->
+            <article class="glass-card rounded-[2.5rem] overflow-hidden p-6 md:p-10 space-y-8 animate-fade-in">
+                <div class="space-y-4 text-center">
+                    <span class="text-story-gold font-bold text-sm tracking-widest uppercase">Scene 05: Togetherness</span>
+                    <p class="text-xl md:text-2xl text-slate-200 leading-relaxed font-light italic">
+                        "Wah, enak nih!"
+                    </p>
+                    <p class="text-sm text-slate-400">
+                        Kebersamaan yang hangat. Seluruh kelas kini ceria, berbagi tawa sambil membuka bekal bergizi mereka.
+                    </p>
+                </div>
+                <div class="relative bg-black rounded-xl overflow-hidden shadow-2xl">
+                    <img src='https://opal.google/board/blobs/ad30b60b-125f-4a24-bc9e-299419b530de' alt='Scene 5: Togetherness' class="w-full h-auto object-cover" />
+                </div>
+            </article>
+
+            <!-- Scene 6 & 7 (The Meal) -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <article class="glass-card rounded-[2.5rem] overflow-hidden p-6 space-y-4 animate-fade-in">
+                    <span class="text-story-gold font-bold text-[10px] tracking-widest uppercase">Scene 06: Detail</span>
+                    <div class="relative bg-black rounded-xl overflow-hidden shadow-xl aspect-video">
+                        <img src='https://opal.google/board/blobs/a92200ef-5ccc-4a8e-9a04-e59b8952d972' alt='Scene 6: Main Moment' class="w-full h-full object-cover" />
+                    </div>
+                    <p class="text-sm italic text-slate-300">"ini banyak banget..."</p>
+                </article>
+                <article class="glass-card rounded-[2.5rem] overflow-hidden p-6 space-y-4 animate-fade-in">
+                    <span class="text-story-gold font-bold text-[10px] tracking-widest uppercase">Scene 07: Enjoyment</span>
+                    <div class="relative bg-black rounded-xl overflow-hidden shadow-xl aspect-video">
+                        <img src='https://opal.google/board/blobs/adbba6bb-1ed4-44ec-9058-b3aa2ff01f13' alt='Scene 7: Eating' class="w-full h-full object-cover" />
+                    </div>
+                    <p class="text-sm italic text-slate-300">"...enak..."</p>
+                </article>
+            </div>
+
+            <!-- Scene 8 -->
+            <article class="glass-card rounded-[2.5rem] overflow-hidden p-6 md:p-10 space-y-8 animate-fade-in">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <span class="text-story-emerald font-bold text-sm tracking-widest uppercase">Scene 08: Transformation</span>
+                        <span class="text-xs text-slate-500 italic">Lighting: Bright</span>
+                    </div>
+                    <p class="text-xl md:text-2xl text-slate-200 leading-relaxed font-light italic">
+                        "Bu, saya tahu jawabannya!"
+                    </p>
+                    <p class="text-sm text-slate-400">
+                        Energi yang kembali. Fokus yang tajam. Ia mengangkat tangan dengan percaya diri, siap menaklukkan tantangan di kelas.
+                    </p>
+                </div>
+                <div class="relative bg-black rounded-xl overflow-hidden shadow-2xl">
+                    <img src='https://opal.google/board/blobs/fcdbd5dc-2243-4e2a-8b28-51ac9d927a75' alt='Scene 8: Transformation' class="w-full h-auto object-cover" />
+                </div>
+            </article>
+
+            <!-- Scene 9 -->
+            <article class="glass-card rounded-[2.5rem] overflow-hidden p-6 md:p-10 space-y-8 animate-fade-in">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <span class="text-story-gold font-bold text-sm tracking-widest uppercase">Scene 09: Future</span>
+                        <span class="text-xs text-slate-500 italic">Lighting: Golden Hour</span>
+                    </div>
+                    <p class="text-xl md:text-2xl text-slate-200 leading-relaxed font-light italic">
+                        "Aku mau jadi orang yang berguna."
+                    </p>
+                    <p class="text-sm text-slate-400">
+                        Menatap ke luar jendela. Dunia terlihat berbeda ketika harapan sudah di depan mata. Ia memimpikan masa depan yang cerah.
+                    </p>
+                </div>
+                <div class="relative bg-black rounded-xl overflow-hidden shadow-2xl">
+                    <img src='https://opal.google/board/blobs/6207de87-b512-4c99-93ab-044be562989f' alt='Scene 9: Future' class="w-full h-auto object-cover" />
+                </div>
+            </article>
+
+            <!-- Scene 10 -->
+            <article class="relative overflow-hidden p-8 md:p-16 rounded-[3rem] text-center space-y-8 animate-fade-in bg-gradient-to-b from-story-deep to-black border border-story-gold/20">
+                <div class="absolute inset-0 opacity-10 pointer-events-none">
+                    <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-story-gold/20 via-transparent to-transparent"></div>
+                </div>
+                <div class="relative z-10 space-y-6">
+                    <span class="text-story-gold font-bold text-sm tracking-[0.3em] uppercase">The Final Promise</span>
+                    <h4 class="text-5xl md:text-7xl font-serif font-bold italic text-white drop-shadow-lg">"Aku bisa."</h4>
+                    <div class="max-w-xl mx-auto border-t border-white/10 pt-8">
+                        <div class="relative bg-black rounded-2xl overflow-hidden shadow-2xl mb-8">
+                            <img src='https://opal.google/board/blobs/ea7a7ba1-7018-4d8e-b51c-bbfeb887f12b0' alt='Scene 10: Final' class="w-full h-auto object-cover" />
+                        </div>
+                        <p class="text-slate-400 leading-relaxed italic">
+                            Kisah Program Makan Bergizi Gratis telah mencapai kesimpulan yang hangat. Langkah kecil hari ini adalah lompatan besar untuk masa depan Indonesia.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Skill & Tools Bento -->
+        <section class="space-y-8">
+             <h3 class="text-3xl font-serif font-bold text-center">Skills & Capabilities</h3>
+             <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass-card p-8 rounded-3xl space-y-4 border-t-2 border-story-purple">
+                    <div class="w-12 h-12 rounded-xl bg-story-purple/20 flex items-center justify-center text-story-purple text-2xl mb-4">✍️</div>
+                    <h4 class="font-bold text-xl">Storytelling</h4>
+                    <p class="text-sm text-slate-400">Merancang narasi mendalam yang mampu menggugah emosi dan menyampaikan pesan secara efektif.</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl space-y-4 border-t-2 border-story-gold">
+                    <div class="w-12 h-12 rounded-xl bg-story-gold/20 flex items-center justify-center text-story-gold text-2xl mb-4">📐</div>
+                    <h4 class="font-bold text-xl">Visual Direction</h4>
+                    <p class="text-sm text-slate-400">Menentukan gaya visual, pencahayaan, dan komposisi yang konsisten untuk sebuah brand atau kampanye.</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl space-y-4 border-t-2 border-story-emerald">
+                    <div class="w-12 h-12 rounded-xl bg-story-emerald/20 flex items-center justify-center text-story-emerald text-2xl mb-4">🛠️</div>
+                    <h4 class="font-bold text-xl">AI & Tools</h4>
+                    <p class="text-sm text-slate-400">Pemanfaatan AI Image Generation, Video Tools, dan basic editing untuk mempercepat workflow kreatif.</p>
+                </div>
+             </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="glass-card rounded-[2.5rem] p-12 text-center space-y-8 border-2 border-story-gold/30">
+            <h3 class="text-4xl font-serif font-bold">Mari Berkolaborasi</h3>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto">
+                Saya terbuka untuk proyek kreatif, inisiatif edukasi, atau kampanye sosial yang bertujuan memberikan dampak positif bagi masyarakat.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6 pt-4">
+                <div class="flex flex-col items-center">
+                    <span class="text-xs text-slate-500 uppercase tracking-widest mb-1">Email</span>
+                    <a href="mailto:umarsupardi96@gmail.com" class="text-xl font-bold text-story-gold hover:underline">umarsupardi96@gmail.com</a>
+                </div>
+                <div class="hidden md:block w-px h-12 bg-white/10"></div>
+                <div class="flex flex-col items-center">
+                    <span class="text-xs text-slate-500 uppercase tracking-widest mb-1">WhatsApp</span>
+                    <a href="https://wa.me/6285138312900" class="text-xl font-bold text-story-gold hover:underline">0851-3831-2900</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Simple scroll reveal interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    entry.target.style.opacity = "1";
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('article').forEach(card => {
+            card.style.opacity = "0";
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+
